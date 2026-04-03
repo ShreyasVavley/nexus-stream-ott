@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Stream - OTT Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Nexus<span>Stream</span></div>
+        <nav>
+            <a href="#trending">Trending</a>
+            <a href="#portal">User Portal</a>
+            <a href="#verify">Access Check</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Infinite Stories, <span>One Subscription.</span></h1>
+            <p>Stream your favorite hits and cinematic masterpieces with Nexus Stream's secure platform.</p>
+        </section>
+
+        <section id="trending">
+            <h2>🔥 Trending Movies</h2>
+            <div id="movie-grid" class="flex-grid">
+                <!-- Trending cards inject here -->
+            </div>
+        </section>
+
+        <section id="portal">
+            <h2>👥 Registered Users</h2>
+            <div id="user-grid" class="flex-grid">
+                <!-- User cards inject here -->
+            </div>
+        </section>
+
+        <section id="verify">
+            <div class="check-box">
+                <h2>🔒 Content Verification</h2>
+                <div class="form-row">
+                    <input type="number" id="play-user-id" placeholder="User ID">
+                    <input type="number" id="play-content-id" placeholder="Movie ID">
+                    <button class="primary-btn" onclick="requestPlay()">Verify & Play</button>
+                </div>
+                <div id="play-status"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

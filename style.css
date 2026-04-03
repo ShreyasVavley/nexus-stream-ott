@@ -1,0 +1,167 @@
+:root {
+  --primary: #940005;
+  --secondary: #ff2e35;
+  --bg: #141414;
+  --card: #1f1f1f;
+  --text: #ffffff;
+  --text-muted: #b3b3b3;
+  --radius: 8px;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+header {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  border-bottom: 0.5px solid #222;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -2px;
+}
+
+.logo span {
+  color: var(--secondary);
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.banner {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  letter-spacing: -3px;
+}
+
+.banner h1 span {
+  background: linear-gradient(90deg, #fff, var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+.flex-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  width: calc(25% - 1.5rem);
+  min-width: 280px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border: 1px solid #2a2a2a;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary);
+  box-shadow: 0 10px 40px rgba(148, 0, 5, 0.4);
+}
+
+.card .title { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; }
+.card .meta { font-size: 1.1rem; color: var(--text-muted); }
+
+.check-box {
+  margin-top: 6rem;
+  background-color: #000;
+  padding: 4rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #1a1a1a;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+input {
+  background-color: #111;
+  border: 1px solid #222;
+  color: #fff;
+  padding: 1.2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  width: 250px;
+}
+
+.primary-btn {
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.primary-btn:hover { background-color: var(--primary); }
+
+#play-status {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
